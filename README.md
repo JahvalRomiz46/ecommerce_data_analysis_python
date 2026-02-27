@@ -1,4 +1,4 @@
-# Analisis Data Penjualan Online Store dengan Python & Streamlit📊
+# E-Commerce Sales Performance & Customer Retention Analysis (Olist Store)📊
 <br>
 
 ## Deskripsi Proyek
