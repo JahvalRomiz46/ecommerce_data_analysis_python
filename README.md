@@ -2,6 +2,8 @@
 
 > Data Wrangling · EDA · RFM Analysis · Streamlit Dashboard | Project analisis data end-to-end untuk menjawab pertanyaan: **"Produk apa yang paling menguntungkan, dan siapa pelanggan terbaik Olist Store?"**
 
+![Dashboard Screenshot](dashboard/dashboard_screenshot.png)
+
 ## 📌 Latar Belakang
 
 Olist Store adalah platform e-commerce asal Brasil yang menghubungkan ribuan merchant dengan jutaan pelanggan. Dataset publik yang tersedia terdiri dari 8 tabel relasional yang mencakup informasi pesanan, produk, pelanggan, hingga ulasan.
@@ -19,14 +21,31 @@ Project ini menganalisis performa penjualan dan perilaku pelanggan secara end-to
 
 | Temuan | Detail |
 |---|---|
-| **Kategori produk terlaris** | Bed, Bath & Table |
-| **Kategori produk terlemah** | Security & Services |
-| **Pelanggan paling aktif (Recency)** | Pembelian terakhir 0 hari dari tanggal terbaru dataset |
-| **Frequency pelanggan** | Seluruh pelanggan tercatat hanya melakukan 1x transaksi |
-| **Pelanggan dengan pengeluaran terbesar (Monetary)** | R$ 13.440,00 |
+| **Kategori produk terlaris** | Bed, Bath & Table (11.115 unit terjual) |
+| **Kategori produk terlemah** | Security & Services (2 unit terjual) |
+| **Pelanggan paling aktif (Recency)** | Pembelian terakhir 0 hari dari tanggal terbaru dataset (oleh `ff22e309...`) |
+| **Frekuensi Pembelian Terbanyak (Frequency)** | 16x transaksi (oleh pelanggan `8d50f5ea...`) |
+| **Pelanggan dengan pengeluaran terbesar (Monetary)** | R$ 13.440,00 (oleh pelanggan `0a0a9211...`) |
+| **Tingkat Pembelian Ulang (Repeat Purchase Rate)** | **3,05%** (Hanya 2.913 dari 95.420 pelanggan yang berbelanja > 1 kali) |
+| **Segmen Pelanggan Terbesar** | Churned / Inactive (**60,25%** / 57.492 pelanggan tidak aktif > 180 hari) |
 | **Kota dengan pelanggan terbanyak** | São Paulo, Rio de Janeiro, Belo Horizonte |
 
-> 🔑 **Insight utama:** Nilai Frequency yang seragam (1x transaksi per pelanggan) mengindikasikan tingkat retensi pelanggan yang sangat rendah. Ini adalah sinyal penting bagi tim bisnis untuk memprioritaskan strategi loyalitas dan re-engagement pelanggan.
+> 🔑 **Insight utama:** Meskipun frekuensi transaksi maksimal mencapai 16x oleh pelanggan setia, tingkat pembelian ulang (*repeat purchase rate*) secara keseluruhan sangat rendah (hanya **3,05%**). Mayoritas pelanggan (**96,95%**) adalah pembeli satu kali (*one-time buyers*), dengan **60,25%** pelanggan saat ini berstatus tidak aktif (*Churned*). Ini menunjukkan perlunya pergeseran fokus strategi bisnis dari sekadar akuisisi pelanggan baru ke program retensi dan loyalitas pelanggan.
+
+## 🎯 Rekomendasi Bisnis (Actionable Recommendations)
+
+Berdasarkan temuan data, berikut adalah rekomendasi strategis untuk meningkatkan kinerja bisnis Olist Store:
+
+1. **Program Konversi Pembelian Ulang (Fokus pada One-Time Buyers)**:
+   * **Voucher Pembelian Kedua**: Berikan insentif langsung setelah transaksi pertama (misal: voucher diskon 15% untuk pembelian berikutnya yang berlaku selama 30 hari) guna mempercepat konversi pelanggan baru menjadi pembeli berulang.
+   * **Win-Back Campaign**: Terapkan otomatisasi email pemasaran ulang (*automated email flows*) saat pelanggan masuk ke segmen *Slipping / At Risk* (90-180 hari sejak transaksi terakhir) untuk mencegah mereka churn.
+
+2. **Memaksimalkan Nilai Pelanggan VIP (Fokus pada Active Loyal)**:
+   * **VIP Loyalty Club**: Berikan penawaran gratis ongkos kirim tanpa minimum transaksi, penawaran produk baru lebih awal, atau layanan dukungan prioritas untuk segmen *Active Loyal* (610 pelanggan) yang terbukti memiliki nilai belanja rata-rata tertinggi (**R$ 269,28**).
+
+3. **Optimalisasi Portofolio Produk & Cross-Selling**:
+   * **Bundling & Cross-Selling**: Buat paket bundel promosi lintas kategori terlaris (seperti menggabungkan `bed_bath_table` dengan `furniture_decor` atau `housewares`) untuk meningkatkan rata-rata nilai pesanan (*Average Order Value*).
+   * **Evaluasi Kategori Berkinerja Rendah**: Tinjau kembali biaya penyimpanan dan visibilitas pencarian untuk produk-produk di kategori terbawah (`security_and_services`, `fashion_childrens_clothes`) guna mengurangi inefisiensi inventoris.
 
 ## 🛠️ Tech Stack
 
