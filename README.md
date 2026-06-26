@@ -2,7 +2,7 @@
 
 > Data Wrangling · EDA · RFM Analysis · Streamlit Dashboard | Project analisis data end-to-end untuk menjawab pertanyaan: **"Produk apa yang paling menguntungkan, dan siapa pelanggan terbaik Olist Store?"**
 
-![Dashboard Screenshot](dashboard/dashboard_screenshot.png)
+<img src="Dashboard Screenshot.png" alt="RFM Analysis Dashboard" width="1000">
 
 ## 📌 Latar Belakang
 
