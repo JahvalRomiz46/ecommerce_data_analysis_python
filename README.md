@@ -23,9 +23,9 @@ Project ini menganalisis performa penjualan dan perilaku pelanggan secara end-to
 |---|---|
 | **Kategori produk terlaris** | Bed, Bath & Table (11.115 unit terjual) |
 | **Kategori produk terlemah** | Security & Services (2 unit terjual) |
-| **Pelanggan paling aktif (Recency)** | Pembelian terakhir 0 hari dari tanggal terbaru dataset (oleh `ff22e309...`) |
-| **Frekuensi Pembelian Terbanyak (Frequency)** | 16x transaksi (oleh pelanggan `8d50f5ea...`) |
-| **Pelanggan dengan pengeluaran terbesar (Monetary)** | R$ 13.440,00 (oleh pelanggan `0a0a9211...`) |
+| **Pelanggan paling aktif (Recency)** | Pembelian terakhir 0 hari dari tanggal terbaru dataset (oleh ff22e309...) |
+| **Frekuensi Pembelian Terbanyak (Frequency)** | 16x transaksi (oleh pelanggan 8d50f5ea...) |
+| **Pelanggan dengan pengeluaran terbesar (Monetary)** | R$ 13.440,00 (oleh pelanggan 0a0a9211...) |
 | **Tingkat Pembelian Ulang (Repeat Purchase Rate)** | **3,05%** (Hanya 2.913 dari 95.420 pelanggan yang berbelanja > 1 kali) |
 | **Segmen Pelanggan Terbesar** | Churned / Inactive (**60,25%** / 57.492 pelanggan tidak aktif > 180 hari) |
 | **Kota dengan pelanggan terbanyak** | São Paulo, Rio de Janeiro, Belo Horizonte |
@@ -44,8 +44,8 @@ Berdasarkan temuan data, berikut adalah rekomendasi strategis untuk meningkatkan
    * **VIP Loyalty Club**: Berikan penawaran gratis ongkos kirim tanpa minimum transaksi, penawaran produk baru lebih awal, atau layanan dukungan prioritas untuk segmen *Active Loyal* (610 pelanggan) yang terbukti memiliki nilai belanja rata-rata tertinggi (**R$ 269,28**).
 
 3. **Optimalisasi Portofolio Produk & Cross-Selling**:
-   * **Bundling & Cross-Selling**: Buat paket bundel promosi lintas kategori terlaris (seperti menggabungkan `bed_bath_table` dengan `furniture_decor` atau `housewares`) untuk meningkatkan rata-rata nilai pesanan (*Average Order Value*).
-   * **Evaluasi Kategori Berkinerja Rendah**: Tinjau kembali biaya penyimpanan dan visibilitas pencarian untuk produk-produk di kategori terbawah (`security_and_services`, `fashion_childrens_clothes`) guna mengurangi inefisiensi inventoris.
+   * **Bundling & Cross-Selling**: Buat paket bundel promosi lintas kategori terlaris (seperti menggabungkan bed_bath_table dengan furniture_decor atau housewares) untuk meningkatkan rata-rata nilai pesanan (*Average Order Value*).
+   * **Evaluasi Kategori Berkinerja Rendah**: Tinjau kembali biaya penyimpanan dan visibilitas pencarian untuk produk-produk di kategori terbawah (security_and_services, fashion_childrens_clothes) guna mengurangi inefisiensi inventoris.
 
 ## 🛠️ Tech Stack
 
